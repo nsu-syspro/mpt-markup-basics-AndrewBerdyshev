@@ -1,0 +1,27 @@
+digraph abcd {
+
+    rankdir=LR;
+
+
+    q0 [label="q0" shape=circle];
+
+    q1 [label="q1" shape=circle];
+
+    q2 [label="q2" shape=doublecircle];
+
+    q3 [label="q3" shape=circle];
+
+
+    q0 -> q1 [label="a, b"];
+
+    q1 -> q1 [label="c"];
+
+    q1 -> q2 [label="d"];
+
+    q1 -> q3 [label="e"];
+
+    q3 -> q3 [label="f"];
+
+    q2 -> q3 [label="g"]; // Пример перехода из q2 в q3
+
+}
